@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+Contacts
+{% endblock %}
+{% block main %}
+<p>Contacts:</p>
+    <!--{{contacts}}-->
+<ol>
+    {% for item in contacts %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ol>
+
+{% endblock %}
